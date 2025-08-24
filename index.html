@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max-Codevs Kalkulator Sederhana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body data-theme="dark">
+    <div class="calculator">
+        <div class="calculator-header">
+            <div>
+                <div class="calculator-title">Kalkulator Sederhana</div>
+            </div>
+            <div class="theme-toggle" id="theme-toggle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="display">
+            <div class="previous-operand" id="previous-operand"></div>
+            <div class="current-operand" id="current-operand">0</div>
+        </div>
+        
+        <div class="scientific-panel">
+            <button class="scientific" data-action="square">x²</button>
+            <button class="scientific" data-action="cube">x³</button>
+            <button class="scientific" data-action="sqrt">√</button>
+            <button class="scientific" data-action="percent">%</button>
+        </div>
+        
+        <div class="buttons-container">
+            <div class="main-buttons">
+                <button class="clear" data-action="clear">C</button>
+                <button data-action="delete">⌫</button>
+                <button class="memory" data-action="memory-clear">MC</button>
+                <button class="memory" data-action="memory-recall">MR</button>
+                
+                <button class="scientific" data-action="sin">sin</button>
+                <button class="scientific" data-action="cos">cos</button>
+                <button class="scientific" data-action="tan">tan</button>
+                <button class="operator" data-action="divide">÷</button>
+                
+                <button data-number="7">7</button>
+                <button data-number="8">8</button>
+                <button data-number="9">9</button>
+                <button class="operator" data-action="multiply">×</button>
+                
+                <button data-number="4">4</button>
+                <button data-number="5">5</button>
+                <button data-number="6">6</button>
+                <button class="operator" data-action="subtract">-</button>
+                
+                <button data-number="1">1</button>
+                <button data-number="2">2</button>
+                <button data-number="3">3</button>
+                <button class="operator" data-action="add">+</button>
+                
+                <button data-number="0" class="zero">0</button>
+                <button data-action="decimal">.</button>
+                <button data-action="calculate" class="equals">=</button>
+            </div>
+            
+            <div class="scientific-buttons">
+                <button class="scientific" data-action="log">log</button>
+                <button class="scientific" data-action="ln">ln</button>
+                <button class="scientific" data-action="factorial">x!</button>
+                <button class="scientific" data-action="reciprocal">1/x</button>
+                <button class="scientific" data-action="power">x^y</button>
+                <button class="scientific" data-action="pi">π</button>
+                <button class="scientific" data-action="e">e</button>
+                <button class="scientific" data-action="toggle-sign">±</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
+
